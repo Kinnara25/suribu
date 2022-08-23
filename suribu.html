@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+    <title>Sistem Shuribu</title>
+<body>
+    
+   <form action="Suribu.php" method="post">
+    
+      <table>
+          <tr>
+              <td id="indeks"><label for="Tanggal"><b>Tanggal</b></label></td>
+              <td><input class="form-control" type="date" name="Tanggal Hari ini" /></td>
+          </tr>
+          
+          <tr>
+              <td id="indeks"><label for="Nama Proses"><b>Nama Proses </b></label></td>
+              <td> 
+                <select name="Nama Proses">
+                <option>Shuribu blank</option>
+                </select>
+            </td>
+          </tr>
+          
+          <tr>
+              <td id="indeks"><label for="Lot.No"><b>Lot.No</b> </label></td>
+              <td><input class="form-control" type="text" name="Lot.No" /></td>
+          </tr>
+
+          <tr>
+              <td id="indeks"><label for="Part.No"><b>Part.No</b> </label></td>
+              
+              <td><input class="form-control" type="text" name="Part.No" /></td>
+          </tr>
+      
+          <tr>
+            <td id="indeks"><label for="Status"><b>Status</b></label> </td>
+            <td> 
+              <select name="Status">
+              <option>Open</option>
+              <option>Urgent</option>
+              <option>Close</option>
+            </select> 
+            </td>
+         </tr>
+
+
+          <tr>
+              <td id="indeks"><label for="Nama Item"><b>Nama Item</b></label> </td>
+              <td> 
+                <select name="Cylinder Item">
+                <option>KLP 40.00t</option>
+                <option>HLP 47.00t</option>
+                <option>HLP 52.00t</option>
+                <option>HLP 62.00t</option>
+                <option>HLP 70.00t</option>
+                <option>HLP 80.00t</option>
+                <option>HLP 82.00t</option>
+                <option>HLP 84.00t</option>
+                <option>HLP 88.00t</option>
+                <option>HLP 93.00t</option>
+                <option>HLP 104.00t</option>
+                <option>HLP 135.00t</option>
+            </select> 
+            </td>
+          </tr>
+
+          <tr>
+              <td id="indeks"><label for="Diameter Cylinder"><b>Diameter Cylinder </b></label></td>
+              <td> 
+                <select name="Diameter Cylinder">
+                <option>KLP 40</option>
+                <option>KLP 47</option>
+                <option>KLP 52</option>
+                <option>KLP 62</option>
+                <option>KLP 70</option>
+                <option>KLP 75</option>
+                <option>KLP 80</option>
+                <option>KLP 84</option>
+                <option>KLP 88</option>
+                <option>KLP 104</option>
+                <option>KLP 124</option>
+                <option>KLP 135</option>
+            </select> 
+            </td>
+          </tr>
+          
+          <tr>
+              <td id="indeks"><label for="Item Kode"><b>Item Kode </b></label></td>
+                <td>  
+                  <select name="Item Kode">
+                  <option>INO407</option>
+                  <option>INO408</option>
+                  <option>INO409</option>
+                  <option>INO410</option>
+                  <option>INO411</option>
+                  <option>INO412</option>
+                  <option>INO413</option>
+                  <option>INO415</option>
+                  <option>INO416</option>
+                  <option>INO417</option>
+                  <option>INO418</option>
+              </select>
+              </td>
+          </tr>        
+
+          <tr>
+            <td id="indeks"><label for="Total Stock Barang"><b>Total Stock Barang</b> </label></td>
+            <td><input class="form-control" type="text" name="Total Stock Barang" /></td>
+          </tr>
+
+          <tr>
+              <td id="indeks"><label for="Tanggal Permintaan"><b>Tanggal Permintaan</b></label></td>
+              <td><input class="form-control" type="date" name="Tanggal Permintaan" /></td>
+          </tr>
+
+          <tr>
+              <td id="indeks"><label for="Tanggal Selesai"><b>Tanggal Selesai</b></label></td>
+              <td><input class="form-control" type="date" name="Tanggal Selesai" /></td>
+          </tr>   
+          <tr>
+            <td id="indeks"><label for="Keterangan"><b>Keterangan</b></label></td>
+            <td><input class="form-control" type="text" name="Keterangan" /></td>
+        </tr> 
+
+      </table>
+      <tr>
+            <td><input class="modal-footer "></td>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Simpan</button>
+            <button type="button" class="btn btn-primary">Lihat Update Dempyo</button>
+            <button type="button" class="btn btn-primary">Master PPIC</button>
+          
+        </tr>
+  </form>
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+</html>
