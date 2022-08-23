@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Shuribu</title>
+</head>
+<body>
+  <div class="container">
+  <!-- Content here -->
+    <div class="card mt-3">
+      <div class="card-body">
+  
+        <form action="Shuribu.php" method="post">
+          <div class="row">
+            <div class="col-8">
+              <div class="row">
+                <div class="mb-3 col-4">
+                  <label for="tgl_hariini" class="form-label">Tanggal</label>
+                  <input class="form-control" type="date" id="tgl_hariini" name="Tanggal Hari ini" />
+                </div>
+                <div class="mb-3 col-4">
+                  <label for="tgl_permintaan" class="form-label">Tanggal Permintaan</label>
+                  <input class="form-control" type="date" id="tgl_permintaan" name="Tanggal Permintaan" placeholder="Tanggal Permintaan" />
+                </div>
+                <div class="mb-3 col-4">
+                  <label for="lotno" class="form-label">Lot.No</label>
+                  <input class="form-control" type="text" id="lotno" name="Lot.No" placeholder="Lot.No" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="mb-3 col-4">
+                  <label for="nama_proses" class="form-label">Nama Proses</label>
+                  <select class="form-select" aria-label="Default select example" id="nama_proses" name="Nama Proses">
+                      <option>Shuribu blank</option>
+                      <option>Shuribu blank</option>
+                      <option>Shuribu blank</option>
+                  </select>
+                </div>
+                <div class="mb-3 col-4">
+                  <label for="tgl_selesai" class="form-label">Tanggal Permintaan</label>
+                  <input class="form-control" type="date" id="tgl_selesai" name="Tanggal Selesai" placeholder="Tanggal Selesai" />
+                </div>
+                <div class="mb-3 col-4">
+                  <label for="partno" class="form-label">Part.No</label>
+                  <input class="form-control" type="text" id="partno" name="Part.No" placeholder="part.No" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="mb-3 col-4">
+                  <label for="status" class="form-label">Status</label>
+                  <select class="form-select" aria-label="Default select example" id="status" name="Status">
+                    <option>Open</option>
+                    <option>Urgent</option>
+                    <option>Close</option>
+                  </select> 
+                </div>
+                <div class="mb-3 col-8">
+                  <label for="keterangan" class="form-label">Keterangan</label>
+                  <textarea class="form-control" id="keterangan" name="keterangan" rows="1" placeholder="Keterangan"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="mb-3 mt-3 col-12">          
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Simpan</button>
+                  <button type="button" class="btn btn-secondary">Lihat Update Dempyo</button>
+                  <button type="button" class="btn btn-success">Master PPIC</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="mb-3">
+                <label for="nama_item" class="form-label">Nama Item</label>
+                <select class="form-select" aria-label="Default select example" id="nama_item" name="Cylinder Item">
+                      <option>KLP 40.00t</option>
+                      <option>HLP 47.00t</option>
+                      <option>HLP 52.00t</option>
+                      <option>HLP 62.00t</option>
+                      <option>HLP 70.00t</option>
+                      <option>HLP 80.00t</option>
+                      <option>HLP 82.00t</option>
+                      <option>HLP 84.00t</option>
+                      <option>HLP 88.00t</option>
+                      <option>HLP 93.00t</option>
+                      <option>HLP 104.00t</option>
+                      <option>HLP 135.00t</option>
+                  </select> 
+              </div>
+              <div class="mb-3">
+                <label for="diameter" class="form-label">Diameter Cylinder</label>
+                <select class="form-select" aria-label="Default select example" id="diameter" name="Diameter Cylinder">
+                      <option>KLP 40</option>
+                      <option>KLP 47</option>
+                      <option>KLP 52</option>
+                      <option>KLP 62</option>
+                      <option>KLP 70</option>
+                      <option>KLP 75</option>
+                      <option>KLP 80</option>
+                      <option>KLP 84</option>
+                      <option>KLP 88</option>
+                      <option>KLP 104</option>
+                      <option>KLP 124</option>
+                      <option>KLP 135</option>
+                  </select> 
+              </div>
+              <div class="mb-3">
+                <label for="kode_item" class="form-label">Kode Item</label>
+                <select class="form-select" aria-label="Default select example" id="kode_item" name="Item Kode">
+                        <option>INO407</option>
+                        <option>INO408</option>
+                        <option>INO409</option>
+                        <option>INO410</option>
+                        <option>INO411</option>
+                        <option>INO412</option>
+                        <option>INO413</option>
+                        <option>INO415</option>
+                        <option>INO416</option>
+                        <option>INO417</option>
+                        <option>INO418</option>
+                    </select>
+              </div>
+              <div class="mb-3">
+                <label for="stok_barang" class="form-label">Stok Barang</label>
+                <input class="form-control" type="number" id="stok_barang" name="Total Stock Barang" />
+              </div>
+            </div>
+          </div>
+        </form>
+        </div>
+    </div>
+  </div>
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</html>
