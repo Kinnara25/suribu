@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Suribu</title>
 </head>
 <body>
   <div class="container">
+    
   <!-- Content here -->
   <div class="row">
     <div class="card col-6">
@@ -24,21 +25,25 @@
                   <label for="tgl_selesai" class="form-label">Tanggal Selesai</label>
                   <input class="form-control" type="date" id="tgl_selesai" name="Tanggal Selesai" placeholder="Tanggal Selesai" />
                 </div>
-              </div>
+
               <div class="row">
                 <div class="mb-3 col-10">
                   <label for="stok_barang" class="form-label">Stock Barang Saat ini</label>
                   <input class="form-control" type="number" id="stok_barang" name="Total Stock Barang Sementara" />
                 </div>
+              </div>
+
                 <div class="mb-3 col-10">
                   <label for="Status">Status</label>
                   <label><input type="checkbox"Name="Status" value=" Urgent">Urgent</label>
                 </div>
+             
                 <div class="mb-3 mt-2 col-12">          
                   <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Simpan</button>
                 </div>
               </div>
             </div>
+
             <div class="col-6">
               <div class="mb-3">
                 <label for="kode_item" class="form-label">Kode Item</label>
@@ -87,12 +92,12 @@
         </div>
     </div>
   </div>
-   <div class="row">
+
+  <div class="row">
     <div class="card-body">
-      <div class="p-3 mb-2 bg-warning text-dark"></div>
+      <div class="card card-warning"></div>
         <div class="tab-content" id="ujicoba"></div>
-        </div>
-        <div>
+        
           <div class="card-header p-0 pt-1">
             <ul class="nav nav-tabs" id="custom-tabs-two-tab" role="tablist">
               <li class="nav-item">
@@ -102,7 +107,9 @@
                 <button class="nav-link" id="Permintaan-Selesai-tab" data-bs-toggle="tab" data-bs-target="#custom-tabs-two-selesai" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Permintaan Selesai</button>
               </li>
             </ul>
-          <div class="tab-content" id="myTabContent">
+          </div>
+
+            <div class="tab-content" id="myTabContent">
               <div class="tab-pane fade" id="custom-tabs-two-per" role="tabpanel" aria-labelledby="profile-tab" tabindex="1">
                 <table class="table-hover dataTable no-footer" id="tb_permintaan" role="grid" aria-describedby="tb_perbaikan_info" style="width: 959px;">
                   <thead>
@@ -115,6 +122,7 @@
                   <tbody></tbody>
                 </table>
               </div>
+
               <div class="tab-pane fade" id="custom-tabs-two-selesai" role="tabpanel" aria-labelledby="contact-tab" tabindex="1">
                 <table class="table-hover dataTable no-footer" id="tb_Permintaan" role="grid" aria-describedby="tb_perbaikan_info" style="width: 959px;">
                   <thead>
@@ -128,34 +136,21 @@
                   <tbody></tbody>
                 </table>
               </div>
-              </table>
-              </div>
-          </div>
-          </div>
+
           <!-- /.card-header -->
           <div class="tab-content pt-3" id="custom-tabs-two-per">
-          </div>
-          <div class="card-body">
+            <div class="card-body">
               <div class="tab-content" id="custom-tabs-two-tabContent">
                 <div class="tab-pane fade active show" id="custom-tabs-two-per" role="tabpanel" aria-labelledby="custom-tabs-two-per-tab">
                   <div class="table-responsive">
-                    <div id="tb_permintaan_wrapper" class="dataTables_wrapper no-footer">
-                      </div>
-                  </div>
+                    <div id="tb_permintaan_wrapper" class="dataTables_wrapper no-footer"></div>
                   </div>
                 </div>
-                </table>
-              </table>
-          </table>
-          </div> 
-         </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
+              </div>
+            </div> 
+          </div>
 </body>
 <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
 
